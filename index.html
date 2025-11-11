@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hami MiniMarket - Fresh Groceries Delivered</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <i class="fas fa-store"></i>
+                    <span>Hami MiniMarket</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="active" data-page="home">Home</a>
+                    <a href="#products" data-page="products">Products</a>
+                    <a href="#about" data-page="about">About</a>
+                    <a href="#contact" data-page="contact">Contact</a>
+                </div>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div id="homePage" class="page active">
+            <!-- Home Section -->
+            <section id="home">
+                <!-- Hero Section -->
+                <div class="hero">
+                    <div class="container">
+                        <h1 class="hero-title">Fresh Groceries Delivered to Your Door</h1>
+                        <p class="hero-subtitle">Discover the finest selection of fresh produce, pantry staples, and household essentials at Hami MiniMarket</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" id="shopNowBtn">Shop Now</button>
+                            <button class="btn btn-outline" id="learnMoreBtn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <section class="container">
+                    <h2 class="section-title">Why Choose Hami MiniMarket</h2>
+                    <div class="features">
+                        <div class="feature-card">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>Fast Delivery</h3>
+                            <p>Get your groceries delivered in under 2 hours</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Fresh Products</h3>
+                            <p>Daily sourced fresh produce from local farms</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-tag"></i>
+                            <h3>Best Prices</h3>
+                            <p>Competitive prices with regular discounts</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-headset"></i>
+                            <h3>24/7 Support</h3>
+                            <p>Customer service available anytime</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Featured Products Section -->
+                <section class="container featured-products">
+                    <h2 class="section-title">Featured Products</h2>
+                    <div class="products-grid" id="featuredProductsGrid">
+                        <!-- Featured products will be dynamically added here -->
+                    </div>
+                    <button class="view-all-btn" id="viewAllProductsBtn">View All Products</button>
+                </section>
+
+                <!-- Store Hours Section -->
+                <section class="container">
+                    <h2 class="section-title">Store Hours</h2>
+                    <div class="hours-content">
+                        <div class="hours-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Monday - Sunday</h3>
+                            <p>8:00 AM - 10:00 PM</p>
+                        </div>
+                        <div class="hours-card">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>Open Everyday</h3>
+                            <p>Including holidays</p>
+                        </div>
+                        <div class="hours-card">
+                            <i class="fas fa-truck"></i>
+                            <h3>Delivery Hours</h3>
+                            <p>8:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <!-- Products Page -->
+        <div id="productsPage" class="page">
+            <section id="products" class="products-section">
+                <div class="container">
+                    <h2 class="section-title">All Products</h2>
+                    <div class="products-grid" id="productsGrid">
+                        <!-- All products will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="aboutPage" class="page">
+            <section id="about">
+                <div class="container">
+                    <h2 class="section-title">About Hami MiniMarket</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Welcome to Hami MiniMarket, your trusted neighborhood grocery store since 2010. We are committed to providing the freshest produce and highest quality products to our valued customers.</p>
+                            <p>Our mission is to make grocery shopping convenient, affordable, and enjoyable for everyone in our community. We source our products from local farmers and trusted suppliers to ensure freshness and quality.</p>
+                            <p>At Hami MiniMarket, we believe in:</p>
+                            <ul>
+                                <li>Freshness guaranteed - all produce is delivered daily</li>
+                                <li>Competitive prices - we match any local competitor's price</li>
+                                <li>Excellent customer service - our staff is always ready to help</li>
+                                <li>Community support - we actively participate in local events</li>
+                            </ul>
+                            <p>Visit us today and experience the Hami MiniMarket difference!</p>
+                        </div>
+                        <div class="about-image">
+                            <img src="https://www.tastingtable.com/img/gallery/17-different-types-of-grapes-explained/what-is-a-grape-and-where-are-they-grown-1648831512.webp" alt="Hami MiniMarket Store">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contactPage" class="page">
+            <section id="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="text-center">We'd love to hear from you! Get in touch with us using any of the following methods:</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Visit Us</h3>
+                            <p>123 Market Street<br>Cityville, ST 12345</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Call Us</h3>
+                            <p>(252) 614-567-890<br>Mon-Sun: 8AM-10PM</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>info@hamimarket.com<br>support@hamimarket.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Store Hours</h3>
+                            <p>Monday-Sunday<br>8:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="form-title">Send Us a Message</h3>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" class="form-input">
+                            <input type="email" placeholder="Your Email" class="form-input">
+                        </div>
+                        <input type="text" placeholder="Subject" class="form-input full-width">
+                        <textarea placeholder="Your Message" rows="5" class="form-input full-width"></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hami MiniMarket</h3>
+                    <p>Your trusted neighborhood grocery store providing fresh produce and quality products since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home" data-page="home">Home</a>
+                    <a href="#products" data-page="products">Products</a>
+                    <a href="#about" data-page="about">About Us</a>
+                    <a href="#contact" data-page="contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, Cityville</p>
+                    <p><i class="fas fa-phone"></i> (252) 614-567-890</p>
+                    <p><i class="fas fa-envelope"></i> info@hamimarket.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Hami MiniMarket. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="cartSubtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Tax (5%):</span>
+                <span id="cartTax">$0.00</span>
+            </div>
+            <div class="summary-row" id="discountRow" style="display: none;">
+                <span>Discount (10%):</span>
+                <span id="cartDiscount">-$0.00</span>
+            </div>
+            <div class="summary-row summary-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Item added to cart!</span>
+    </div>
+
+    <!-- Order Summary Page -->
+    <div id="orderSummaryPage" class="page">
+        <section class="container">
+            <h2 class="section-title">Order Summary</h2>
+            <div class="order-summary">
+                <div class="order-items" id="orderItems">
+                    <!-- Order items will be dynamically added here -->
+                </div>
+                <div class="order-totals">
+                    <div class="order-total-row">
+                        <span>Subtotal:</span>
+                        <span id="orderSubtotal">$0.00</span>
+                    </div>
+                    <div class="order-total-row">
+                        <span>Tax (5%):</span>
+                        <span id="orderTax">$0.00</span>
+                    </div>
+                    <div class="order-total-row" id="orderDiscountRow" style="display: none;">
+                        <span>Discount (10%):</span>
+                        <span id="orderDiscount">-$0.00</span>
+                    </div>
+                    <div class="order-total-row order-final-total">
+                        <span>Total:</span>
+                        <span id="orderTotal">$0.00</span>
+                    </div>
+                </div>
+                <button class="confirm-order-btn" id="confirmOrderBtn">Confirm Order</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
